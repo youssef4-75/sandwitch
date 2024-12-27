@@ -1,0 +1,62 @@
+#meta-data{
+    display: flex;
+    justify-content: space-around;
+}
+
+#meta-data h1{
+    font-size: 20px;
+}
+
+
+
+#display-area {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    border: 5px solid #3498db;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 5px #1d4661;
+    background-color: #bdbaba;
+    overflow-y: scroll;
+}
+
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+
+
+
+/* Specific button colors */
+.action-btn{
+    background-color: var(--color); 
+
+}
+
+
+.action-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}

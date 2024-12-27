@@ -1,0 +1,37 @@
+.root{
+    --main-color: rgb(83, 232, 127);
+    --secondary-color: rgb(200, 254, 244);
+    --theme: white;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.css-button-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#image{
+    height: 700px;
+    width: 700px;
+    background-color: red;
+}
+
+#image img{
+    width: 10%;
+    height: 10%;
+    fill: fill;
+}
+
+.command{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

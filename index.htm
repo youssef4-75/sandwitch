@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Maker</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/setting.css">
+    <link rel="stylesheet" href="style/container.css">
+    <link rel="stylesheet" href="style/messageBox.css">
+    <link rel="stylesheet" href="style/sandwitch.css">
+</head>
+<body>
+    <div id="main-container" style="display: flex;">
+
+        <div id="settings-container">
+            <table>
+                <tr id="easy">
+                    <td>Easy</td>
+                    <td><input type="radio" name="level" value="easy"></td>
+                </tr>
+                <tr id="medium">
+                    <td>Medium</td>
+                    <td><input type="radio" name="level" value="medium"></td>
+                </tr>
+                <tr id="hard">
+                    <td>Hard</td>
+                    <td><input type="radio" name="level" value="hard"></td>
+                </tr>
+            </table>
+            <button onclick="start()" class="start-game">Start Game</button>
+        </div>
+
+        <div id="game-container">
+            <div>
+                <div id="header">
+                    <div id="meta-data">
+                        <h1 id="the-game-timer">الوقت الباقي: 12</h1>
+                        <h1 id="the-game-pointer">points: 0</h1>
+                        <h1 id="the-max-pointer">record: 0</h1>
+                    </div>
+                    <h1 id="the-game-text">Sandwich Maker</h1>
+                </div>
+                <div id="display-area">
+                    <div id="sandwitch">
+                        <!-- *-* -->
+
+                    </div>
+                </div>
+                <div id="button-container">
+                    <button class="action-btn" value="Bread" onclick="win()" style="--color:#f39c12">Bread</button>
+                    <button class="action-btn" value="Meat" onclick="selectIngred('Meat')" style="--color:#e74c3c">Meat</button>
+                    <button class="action-btn" value="Cheese" onclick="selectIngred('Cheese')" style="--color:#f1c40f">Cheese</button>
+                    <button class="action-btn" value="Veggies" onclick="selectIngred('Veggies')" style="--color:#27ae60">Veggies</button>
+                    <button class="action-btn" value="Tomate" onclick="selectIngred('Tomate')" style="--color:#c22f33">Tomate</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="blurScreen">
+            <div id="messageBox">
+                <img src="static/m9ain.jpg" alt="a text to appear">
+                <div id="side-text">
+                    <h1 id="h1">main message</h1>
+                    <h2 id="h2">description</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script/generator.js"></script>
+    <script src="script/glogic.js"></script>
+    <script src="script/pointSystem.js"></script>
+    <script src="script/text.js"></script>
+    <script src="script/timer.js"></script>
+    <script src="script/bread.js"></script>
+    <script src="script/drawer.js"></script>
+    <script src="script/colors.js"></script>
+    <script src="script/messageBox.js"></script>
+    <script src="script/events.js"></script>
+    <script  src="script/main.js"></script>
+</body>
+</html>

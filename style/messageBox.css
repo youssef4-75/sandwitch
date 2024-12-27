@@ -1,0 +1,42 @@
+#blurScreen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: 300ms;
+}
+
+
+#messageBox{
+    background-color: aliceblue;
+    padding: 29px;
+    border-radius: 23px;
+    box-shadow: 0 0 20px 0px #1a1a1a;
+    display: flex;
+}
+
+#messageBox img{
+    align-self: center;
+    margin: 12px
+}
+
+#side-text{
+    justify-content: right;
+}
+
+#h1, #h2{
+    padding-right: 0;
+}
+
+
+#h2{
+    padding: 0;
+    margin: 0;
+    width: auto;
+}

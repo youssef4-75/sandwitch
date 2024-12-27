@@ -1,0 +1,89 @@
+#settings-container {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #949292;
+    border-radius: 12px;
+    background-color: #d8d7d7;
+    position: relative; /* Set relative positioning to contain the absolute child */
+    
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+
+
+}
+
+#settings-container table {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+#settings-container td {
+    padding: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+
+
+/* Level buttons styles */
+#easy {
+    /* Green for easy */
+    color: #27ae60;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#medium {
+    /* Yellow for medium */
+    color: #f1c40f;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#hard {
+    color: #e74c3c;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+
+
+button.start-game {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    bottom: 20px; /* Position at the bottom */
+}
+
+
+
+button.start-game:hover {
+    background-color: #fff; /* White background on hover */
+    color: #3498db; /* Blue text on hover */
+    transform: scale(1.05);
+}
+
+button.start-game:active {
+    transform: scale(0.95);
+}
