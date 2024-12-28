@@ -1,11 +1,15 @@
 let CurrentIngredient;
 let Ingredients = ["Meat", "Cheese", "Veggies", "Tomate"];
+let lastIngred = ``;
 
 
 
 function GenerateNext() {
+    do {
     ranIndex = Math.floor(Math.random() * Ingredients.length);
     CurrentIngredient = Ingredients[ranIndex];
+    }
+    while (CurrentIngredient == lastIngred)
 }
 
 
@@ -37,6 +41,8 @@ function ingrediant(state) {
     write(CurrentIngredient);
     colorify('the-game-text', ranColor());
     updateText();
+    lastIngred = CurrentIngredient;
+    
 }
 
 

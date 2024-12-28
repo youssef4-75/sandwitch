@@ -32,7 +32,7 @@ function selectIngred(ingred) {
     }
     if (!checkIngred(ingred)) {
         endIt("wrong answer", false);
-        Losing2();
+        finilize(Losing2);
         return;
     }
     increasePoint();
@@ -60,6 +60,7 @@ function endIt(text, win) {
     resetPoints(win);
     displayPoints();
     resetCoolors();
+    reseBread();
 
 }
 

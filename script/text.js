@@ -13,7 +13,6 @@ function add(text){
 }
 
 function update(container, text){
-    console.log("updating" + container + " with " + text)
     const descButton = document.getElementById(container);
     descButton.innerHTML = text;
 }

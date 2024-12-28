@@ -47,7 +47,7 @@ function oneRound() {
     increase(-difficulty);
     if (checkTimer()) {
         endIt("you were a little bit late", false);
-        Losing1();
+        finilize(Losing1)
     }
 }
 

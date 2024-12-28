@@ -6,7 +6,7 @@ let starting = false;
 function addIngredtoSandwitch(ingred) {
     ingred = ingred.toLowerCase();
     if (ingred=="bread") return;
-    Sandwitch.push(ingred);
+    Sandwitch.unshift(ingred);
 }
 
 
